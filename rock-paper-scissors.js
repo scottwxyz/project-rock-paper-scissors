@@ -50,7 +50,7 @@ function getComputerChoice() {
 /* get the human's choice */
 function getHumanChoice() {
     let humanChoice = prompt("Human makes its choice now.");
-    return humanChoice;
+    return humanChoice.toLowerCase();
 }
 
 
