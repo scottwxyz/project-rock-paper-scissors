@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - Rock Paper Scissors</title>
+</head>
+<body>
+    <script src="rock-paper-scissors.js"> </script>
+<!--
+
+It’s best practice to link to an external JavaScript file inside this script tag. 
+Using an external JavaScript file keeps your HTML file clean and organized.
+
+You don’t have to write additional code in the HTML file. 
+This game is played entirely via the console.
+    
+STEPS
+- write the logic to get the computer choice
+--- create a getComputerChoice function
+--- have it randomly return 1 of 3 strtings: rock, paper, scissors
+    hints: Math.random method and you don't need arrays
+--- test that it works in the console before moving on
+
+- write the logic to get the human choice
+--- create a getHumanChoice function
+--- have it return one of the choices depending on what the user inputs
+    hint: use the prompt method to get the input
+--- test that it works in the console before moving on
+
+
+- declare the players score variables
+--- create variables for humanScore and computerScore in global scope
+--- initialize both scores as 0
+
+- write the logic to play a single round
+--- create a playRound function
+--- define two parameters for playRound: humanChoice and computerChoice
+--- use these two parameters to take the human and computer choices as arguments
+--- make your function’s humanChoice parameter case-insensitive so that 
+    players can input “rock”, “ROCK”, “RocK”, or other variations.
+--- Write the code for your playRound function to console.log a string value 
+    representing the round winner, such as: “You lose! Paper beats Rock”.
+--- Increment the humanScore or computerScore variable based on the round winner.
+
+Example code:
+
+    function playRound(humanChoice, computerChoice) {
+    // your code here!
+    }
+
+    const humanSelection = getHumanChoice();
+    const computerSelection = getComputerChoice();
+
+    playRound(humanSelection, computerSelection);
+
+
+- write the logic to play the entire game
+--- Create a new function named playGame.
+--- Move your playRound function and score variables so that they’re declared inside of the new playGame function
+--- Play 5 rounds by calling playRound 5 times.
+    Hint: When you assign a function call to a variable, the return value of that function is assigned to the variable. 
+    Accessing the variable afterward will only provide the assigned value; it doesn’t recall the function. 
+    You need to recall the choice functions to get new choices for each round.
+--- Re-work your previous functions or create more helper functions if necessary. Specifically, you may want to change the return values to something more useful.
+--- If you already know about loops, you can use them. If not, don’t worry! Loops will be covered in the next lesson.
+
+-->    
+    
+</body>
+</html>
